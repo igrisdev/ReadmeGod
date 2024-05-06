@@ -32,38 +32,15 @@ const { title } = Astro.props
     <title>{title}</title>
   </head>
   <body>
-    <div class='max-w-screen-2xl p-2 mx-auto 2xl:px-0'>
-      <Navbar />
-      <slot />
+    <div
+      class='absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]'
+    >
     </div>
   </body>
+  <div class='max-w-screen-2xl p-2 mx-auto 2xl:px-0'>
+    <Navbar />
+    <slot />
+  </div>
 </html>
-<style is:global>
-  /* :root {
-    --accent: 136, 58, 234;
-    --accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
-      white 60%
-    );
-  }
-  html {
-    font-family: system-ui, sans-serif;
-    background: #13151a;
-    background-size: 224px;
-  }
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
-  } */
-</style>
+
+<style is:global></style>
