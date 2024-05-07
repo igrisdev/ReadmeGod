@@ -1,15 +1,14 @@
 ---
 import AllSections from '@components/general/AllSections.astro'
 import Input from '@components/general/Input.astro'
+import Titles from '@components/general/Titles.astro'
 ---
 
 <AllSections>
-  <h2
+  <Titles
     slot='title'
-    class='text-3xl font-medium mb-2'
-  >
-    Subtitle
-  </h2>
+    title='Subtitle'
+  />
 
   <Input
     slot='info'
