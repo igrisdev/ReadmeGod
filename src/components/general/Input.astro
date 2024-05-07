@@ -1,0 +1,21 @@
+---
+interface Props {
+  type: string
+  id: string
+  placeholder?: string
+  value?: string
+  className?: string
+}
+
+const { className, type, id, placeholder, value } = Astro.props
+---
+
+<label>
+  <input
+    type={type}
+    id={id}
+    placeholder={placeholder}
+    value={value}
+    class=`border-b border-black px-2 py-1 outline-none focus:border-purple-600 ${className}`
+  />
+</label>
