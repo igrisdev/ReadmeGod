@@ -1,10 +1,12 @@
 ---
-import Introduction from '@components/sections/Introduction.astro';
-import Layout from '../layouts/Layout.astro';
+import Title from '@components/sections/Title.astro'
+import Layout from '../layouts/Layout.astro'
+import Subtitle from '@components/sections/Subtitle.astro'
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<Introduction />
-	</main>
+<Layout title='Welcome to Astro.'>
+  <main class='flex flex-col gap-y-6'>
+    <Title />
+    <Subtitle />
+  </main>
 </Layout>

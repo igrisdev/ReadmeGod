@@ -1,0 +1,31 @@
+---
+import AllSections from '@components/general/AllSections.astro'
+import Input from '@components/general/Input.astro'
+---
+
+<AllSections>
+  <h2
+    slot='title'
+    class='text-3xl font-medium mb-2'
+  >
+    Title
+  </h2>
+
+  <div
+    slot='info'
+    class='flex gap-6'
+  >
+    <Input
+      type='text'
+      id='introduction-title-auto'
+      value='Soy un.. '
+      className='w-40'
+    />
+
+    <Input
+      type='text'
+      id='introduction-title'
+      placeholder='Name'
+    />
+  </div>
+</AllSections>

@@ -1,0 +1,20 @@
+---
+import AllSections from '@components/general/AllSections.astro'
+import Input from '@components/general/Input.astro'
+---
+
+<AllSections>
+  <h2
+    slot='title'
+    class='text-3xl font-medium mb-2'
+  >
+    Subtitle
+  </h2>
+
+  <Input
+    slot='info'
+    type='text'
+    id='introduction-subtitle'
+    placeholder='A sort description'
+  />
+</AllSections>
